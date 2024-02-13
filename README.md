@@ -7,3 +7,8 @@ without DLL injection. Only affects client side.
 Dependent on:
 - https://github.com/moonshadow565/ritobin
 - https://github.com/LeagueToolkit/cslol-manager
+
+Todos:
+- Selection of skins by visualization or at least name (currently by number)
+- Implementation as a standalone app without requiring manual actions in the CSLOL Manager
+- Possibly trigger a resource reload at runtime
