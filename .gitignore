@@ -1,3 +1,7 @@
 /.idea/
 /tools/
+/mods/
+/orig/
+/temp/
+/mods/
 poetry.lock
