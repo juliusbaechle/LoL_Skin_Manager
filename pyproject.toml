@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "LOL_Skin_Manager"
+version = "0.0.0"
+description = "Enables the pre-game selection of any skin in League of Legends without DLL injection. Only affects client side."
+authors = ["Julius Baechle <julius.baechle@yahoo.de>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<3.12,>=3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
