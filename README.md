@@ -3,4 +3,4 @@ Enables the selection of any skin in League of Legends without DLL injection.
 
 Dependend on:
 - https://github.com/moonshadow565/ritobin
-- https://github.com/LeagueToolkit/cslol-manager/releases 
+- https://github.com/LeagueToolkit/cslol-manager
