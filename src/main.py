@@ -3,11 +3,8 @@ from json.encoder import JSONEncoder
 import subprocess
 
 ini = JSONDecoder().decode(open("config.json").read())
-print(ini)
-
 champ = "Ahri"
 skin = 37  # KDA All Out - Emerald
-
 
 src = f"{ini['league_path']}\\Game\\DATA\\FINAL\\Champions\\{champ}.wad.client"
 dst = f"..\\orig\\{champ}"
