@@ -9,7 +9,7 @@ champ = "ahri"
 skin = 37 # KDA All Out - Emerald
 
 # read original skin
-src = f"{ini['league_path']}\\Game\\DATA\\FINAL\\Champions\\{champ.capitalize()}.wad.client"
+src = f"{ini['league_path']}\\DATA\\FINAL\\Champions\\{champ.capitalize()}.wad.client"
 dst = f"..\\orig\\{champ}"
 cmd = f"{ini['cslol_manager_path']}\\cslol-tools\\wad-extract.exe"
 code = subprocess.run([cmd, src, dst])
@@ -47,19 +47,18 @@ dst = f"..\\mod\\{champ}\\data\\characters\\{champ}\\skins\\skin0.bin"
 cmd = f"{ini['ritobin_path']}\\ritobin_cli.exe"
 code = subprocess.run([cmd, src, dst])
 
-exit(0)
 # integrate new skin into cslol-manager
-name = f"{champ} {skin}"
-src = f"..\\mod\\{champ}\\data"
-dst = f"{ini['cslol_manager_path']}\\installed\\{name}\\WAD\\{champ.capitalize()}.wad.client"
-cmd = f"{ini['cslol_manager_path']}\\cslol-tools\\wad-make.exe"
-code = subprocess.run([cmd, src, dst])
+name = f"{champ.capitalize()} {skin}"
+dst = f"{ini['cslol_manager_path']}\\installed\\{name}"
 
 info = JSONDecoder().decode(open("default_info.json").read())
-info['name'] = name.capitalize()
-dst = f"{ini['cslol_manager_path']}\\installed\\{name}\\META"
-os.makedirs(dst, exist_ok=True)
-open(f"{dst}\\info.json", mode='w').write(JSONEncoder().encode(info))
+info['name'] = name
+os.makedirs(f"{dst}\\META", exist_ok=True)
+open(f"{dst}\\META\\info.json", mode='w').write(JSONEncoder().encode(info))
+
+cmd = f"{ini['cslol_manager_path']}\\cslol-tools\\mod-tools.exe"
+src = f"..\\mod\\{champ}"
+code = subprocess.run([cmd, "addwad", src, dst, f"--game:{ini['league_path']}", "--removeUNK", "--noTFT"])
 
 # delete obsolete directories
 shutil.rmtree("..\\temp\\")
