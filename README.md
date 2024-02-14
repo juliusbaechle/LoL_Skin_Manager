@@ -1,4 +1,4 @@
-# LOL_Skin_Manager
+# LoL_Skin_Manager
 Enables pre-game selection of any champion skin in League of Legends  
 without DLL injection. Only affects client side.
 
