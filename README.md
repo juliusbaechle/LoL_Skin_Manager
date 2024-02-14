@@ -10,5 +10,4 @@ Dependent on:
 
 Todos:
 - Selection of skins by visualization or at least name (currently by number)
-- Implementation as a standalone app without requiring manual actions in the CSLOL Manager
 - Possibly trigger a resource reload at runtime
