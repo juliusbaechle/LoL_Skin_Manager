@@ -18,12 +18,13 @@ Usage:
   > Select created skin  
   > Click "Run"
 - Join game with base skin and have fun :)
-<br>
+<br>  
 
 How to find the skin number?
 - Comment out line "shutil.rmtree("..\\orig\\")" and run skript
 - Open "orig\<champ>\assets\characters\<champ>\hud" to find the skin series
 - Open "orig\<champ>\assets\characters\<champ>\skins\skin<nbr>" to find the chroma
+<br>  
 
 Todos:
 - Selection of skins by visualization or at least name (currently by number)
