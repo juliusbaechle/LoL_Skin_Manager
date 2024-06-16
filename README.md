@@ -22,8 +22,8 @@ Usage:
 
 How to find the skin number?
 - Comment out line "shutil.rmtree("..\\orig\\")" and run skript
-- Open "orig\<champ>\assets\characters\<champ>\hud" to find the skin series
-- Open "orig\<champ>\assets\characters\<champ>\skins\skin<nbr>" to find the chroma
+- Open "orig\<champ>\assets\characters\\\<champ>\hud" to find the skin series
+- Open "orig\<champ>\assets\characters\\\<champ>\skins\skin\<nbr>" to find the chroma
 <br>  
 
 Todos:
