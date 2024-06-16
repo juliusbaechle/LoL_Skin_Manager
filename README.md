@@ -13,7 +13,7 @@ Usage:
 - Create skin:  
   > If necessary, download and install python: https://www.python.org/downloads/  
   > Adapt champ and skin number in main.py (f.e. Ahri 37)  
-  > Run main.py (double click or "" in console)
+  > Run main.py (double click)
 - Open CSLOL-Manager:
   > Your created skin should appear in the list  
   > Select created skin  
